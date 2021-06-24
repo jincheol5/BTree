@@ -1,0 +1,37 @@
+package test;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// create tree set object
+        TreeSet<Integer> treeadd = new TreeSet<Integer>();
+
+        // populate the TreeSet using add() method
+        treeadd.add(40);
+        treeadd.add(30);
+        treeadd.add(20);
+        treeadd.add(10);
+
+        // Print the TreeSet
+        System.out.println("TreeSet: " + treeadd);
+
+        // getting the floor value for 25
+        // using floor() method
+       
+
+        // printing the floor value
+        System.out.println("value : "
+                           + treeadd.ceiling(10)+" "+treeadd.floor(20));
+        
+        
+        Iterator<Integer> treeIterator = treeadd.tailSet(10).iterator();
+        while (treeIterator.hasNext()) {
+			System.out.print(treeIterator.next()+" ");
+		}
+	}
+
+}
